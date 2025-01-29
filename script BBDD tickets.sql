@@ -1,0 +1,87 @@
+DROP DATABASE IF EXISTS tickets;
+CREATE DATABASE tickets;
+USE tickets;
+
+CREATE TABLE empresas (
+    empresa_id INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    cif VARCHAR(20) NOT NULL,
+    PRIMARY KEY (empresa_id)
+);
+
+CREATE TABLE ticket_prioridades (
+    prioridad_id CHAR(2) NOT NULL,
+    descripcion VARCHAR(20) NOT NULL,
+    PRIMARY KEY (prioridad_id)
+);
+
+CREATE TABLE ticket_estados (
+    estado_id CHAR(2) NOT NULL,
+    descripcion VARCHAR(20) NOT NULL,
+    PRIMARY KEY (estado_id)
+);
+
+CREATE TABLE grupos (
+    grupo_id INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(20) NOT NULL,
+    PRIMARY KEY (grupo_id)
+);
+
+CREATE TABLE agentes (
+    agente_id INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(40) NOT NULL,
+    correo VARCHAR(60) NOT NULL,
+    grupo INT NOT NULL,
+    PRIMARY KEY (agente_id),
+	FOREIGN KEY (grupo) REFERENCES grupos(grupo_id)
+);
+
+CREATE TABLE contactos (
+    contacto_id INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(20) NOT NULL,
+    correo VARCHAR(60) NOT NULL,
+    telefono1 CHAR(9) NOT NULL,
+    telefono2 CHAR(9),
+    empresa INT NOT NULL,
+    PRIMARY KEY (contacto_id),
+	FOREIGN KEY (empresa) REFERENCES empresas(empresa_id)
+);
+
+CREATE TABLE ticket_tipos (
+    tipo_id INT NOT NULL,
+    nombre VARCHAR(40) NOT NULL,
+    PRIMARY KEY (tipo_id)
+);
+
+CREATE TABLE tickets (
+    ticket_id INT NOT NULL AUTO_INCREMENT,
+    descripcion VARCHAR(40) NOT NULL,
+    cuerpo TEXT NOT NULL,
+    propietario INT NOT NULL,
+    agente INT NOT NULL,
+    contacto INT NOT NULL,
+	estado CHAR(2) NOT NULL,
+    prioridad CHAR(2) NOT NULL,
+    tipo INT NOT NULL,
+    fecini DATETIME NOT NULL,
+    fecobj DATETIME NOT NULL,
+    fecfin DATETIME NOT NULL,
+    PRIMARY KEY (ticket_id),
+	FOREIGN KEY (propietario) REFERENCES agentes(agente_id),
+	FOREIGN KEY (agente) REFERENCES agentes(agente_id),
+	FOREIGN KEY (contacto) REFERENCES contactos(contacto_id),
+	FOREIGN KEY (estado) REFERENCES ticket_estados(estado_id),
+	FOREIGN KEY (prioridad) REFERENCES ticket_prioridades(prioridad_id),
+	FOREIGN KEY (tipo) REFERENCES ticket_tipos(tipo_id)
+);
+
+CREATE TABLE notas (
+	nota_id INT NOT NULL AUTO_INCREMENT,
+    ticket INT NOT NULL,
+    cuerpo VARCHAR(500) NOT NULL,
+    propietario INT NOT NULL,
+    fecini DATETIME NOT NULL,
+    PRIMARY KEY (nota_id),
+    FOREIGN KEY (ticket) REFERENCES tickets(ticket_id),
+    FOREIGN KEY (propietario) REFERENCES agentes(agente_id)
+);
