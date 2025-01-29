@@ -31,7 +31,7 @@ CREATE TABLE agentes (
     agente_id INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(40) NOT NULL,
     correo VARCHAR(60) NOT NULL,
-    grupo INT NOT NULL,
+    grupo_id INT NOT NULL,
     PRIMARY KEY (agente_id),
 	FOREIGN KEY (grupo) REFERENCES grupos(grupo_id)
 );
@@ -42,7 +42,7 @@ CREATE TABLE contactos (
     correo VARCHAR(60) NOT NULL,
     telefono1 CHAR(9) NOT NULL,
     telefono2 CHAR(9),
-    empresa INT NOT NULL,
+    empresa_id INT NOT NULL,
     PRIMARY KEY (contacto_id),
 	FOREIGN KEY (empresa) REFERENCES empresas(empresa_id)
 );
@@ -58,11 +58,11 @@ CREATE TABLE tickets (
     descripcion VARCHAR(40) NOT NULL,
     cuerpo TEXT NOT NULL,
     propietario INT NOT NULL,
-    agente INT NOT NULL,
-    contacto INT NOT NULL,
-	estado CHAR(2) NOT NULL,
-    prioridad CHAR(2) NOT NULL,
-    tipo INT NOT NULL,
+    agente_id INT NOT NULL,
+    contacto_id INT NOT NULL,
+	estado_id CHAR(2) NOT NULL,
+    prioridad_id CHAR(2) NOT NULL,
+    tipo_id INT NOT NULL,
     fecini DATETIME NOT NULL,
     fecobj DATETIME NOT NULL,
     fecfin DATETIME NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE tickets (
 
 CREATE TABLE notas (
 	nota_id INT NOT NULL AUTO_INCREMENT,
-    ticket INT NOT NULL,
+    ticket_id INT NOT NULL,
     cuerpo VARCHAR(500) NOT NULL,
     propietario INT NOT NULL,
     fecini DATETIME NOT NULL,
