@@ -1,0 +1,16 @@
+INSERT INTO `tickets`.`ticket_tipos` (`tipo_id`, `nombre`) VALUES ('1', 'Incidencia');
+INSERT INTO `tickets`.`ticket_tipos` (`tipo_id`, `nombre`) VALUES ('2', 'Mejora');
+INSERT INTO `tickets`.`ticket_tipos` (`tipo_id`, `nombre`) VALUES ('3', 'Petición de nueva funcionalidad');
+INSERT INTO `tickets`.`ticket_tipos` (`tipo_id`, `nombre`) VALUES ('4', 'Duda sobre funcionamiento');
+INSERT INTO `tickets`.`ticket_tipos` (`tipo_id`, `nombre`) VALUES ('5', 'Pedido');
+INSERT INTO `tickets`.`ticket_tipos` (`tipo_id`, `nombre`) VALUES ('6', 'Otras tareas');
+
+INSERT INTO `tickets`.`ticket_prioridades` (`prioridad_id`, `descripcion`) VALUES ('AL', 'Alta');
+INSERT INTO `tickets`.`ticket_prioridades` (`prioridad_id`, `descripcion`) VALUES ('BA', 'Baja');
+INSERT INTO `tickets`.`ticket_prioridades` (`prioridad_id`, `descripcion`) VALUES ('ME', 'Media');
+INSERT INTO `tickets`.`ticket_prioridades` (`prioridad_id`, `descripcion`) VALUES ('UR', 'Urgente');
+
+INSERT INTO `tickets`.`ticket_estados` (`estado_id`, `descripcion`) VALUES ('AB', 'Abierto');
+INSERT INTO `tickets`.`ticket_estados` (`estado_id`, `descripcion`) VALUES ('CE', 'Cerrado');
+INSERT INTO `tickets`.`ticket_estados` (`estado_id`, `descripcion`) VALUES ('PE', 'Pendiente');
+INSERT INTO `tickets`.`ticket_estados` (`estado_id`, `descripcion`) VALUES ('RE', 'Resuelto');
