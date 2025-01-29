@@ -1,0 +1,5 @@
+- Utilizar Entity Framework Core contra MySQL mediante la librería Pomelo.
+- Desarrollo en C#.
+- Probaremos con Blazor para hacerlo en entorno web.
+- Hay que estructurarlo por capas, separando datos-lógica-presentación.
+- Una vez tengamos algo funcionando, haremos también el ejercicio de sustituir la capa grafica de Blazor por una de escritorio en Win UI. Pero la capa de datos y lógica tendría que ser exactamente la misma independientemente de la de presentación.
