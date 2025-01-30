@@ -33,7 +33,7 @@ CREATE TABLE agentes (
     correo VARCHAR(60) NOT NULL,
     grupo_id INT NOT NULL,
     PRIMARY KEY (agente_id),
-	FOREIGN KEY (grupo) REFERENCES grupos(grupo_id)
+	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id)
 );
 
 CREATE TABLE contactos (
@@ -44,7 +44,7 @@ CREATE TABLE contactos (
     telefono2 CHAR(9),
     empresa_id INT NOT NULL,
     PRIMARY KEY (contacto_id),
-	FOREIGN KEY (empresa) REFERENCES empresas(empresa_id)
+	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id)
 );
 
 CREATE TABLE ticket_tipos (
@@ -68,11 +68,11 @@ CREATE TABLE tickets (
     fecfin DATETIME NOT NULL,
     PRIMARY KEY (ticket_id),
 	FOREIGN KEY (propietario) REFERENCES agentes(agente_id),
-	FOREIGN KEY (agente) REFERENCES agentes(agente_id),
-	FOREIGN KEY (contacto) REFERENCES contactos(contacto_id),
-	FOREIGN KEY (estado) REFERENCES ticket_estados(estado_id),
-	FOREIGN KEY (prioridad) REFERENCES ticket_prioridades(prioridad_id),
-	FOREIGN KEY (tipo) REFERENCES ticket_tipos(tipo_id)
+	FOREIGN KEY (agente_id) REFERENCES agentes(agente_id),
+	FOREIGN KEY (contacto_id) REFERENCES contactos(contacto_id),
+	FOREIGN KEY (estado_id) REFERENCES ticket_estados(estado_id),
+	FOREIGN KEY (prioridad_id) REFERENCES ticket_prioridades(prioridad_id),
+	FOREIGN KEY (tipo_id) REFERENCES ticket_tipos(tipo_id)
 );
 
 CREATE TABLE notas (
@@ -82,6 +82,6 @@ CREATE TABLE notas (
     propietario INT NOT NULL,
     fecini DATETIME NOT NULL,
     PRIMARY KEY (nota_id),
-    FOREIGN KEY (ticket) REFERENCES tickets(ticket_id),
+    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id),
     FOREIGN KEY (propietario) REFERENCES agentes(agente_id)
 );
