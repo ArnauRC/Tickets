@@ -27,13 +27,22 @@ CREATE TABLE grupos (
     PRIMARY KEY (grupo_id)
 );
 
+CREATE TABLE usuarios (
+	usuario_id INT NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL,
+    PRIMARY KEY (usuario_id)
+);
+
 CREATE TABLE agentes (
     agente_id INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(40) NOT NULL,
     correo VARCHAR(60) NOT NULL,
     grupo_id INT NOT NULL,
+    usuario_id INT NOT NULL,
     PRIMARY KEY (agente_id),
-	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id)
+	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id),
+    	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
 );
 
 CREATE TABLE contactos (
@@ -63,9 +72,9 @@ CREATE TABLE tickets (
 	estado_id CHAR(2) NOT NULL,
     prioridad_id CHAR(2) NOT NULL,
     tipo_id INT NOT NULL,
-    fecini DATETIME NOT NULL,
-    fecobj DATETIME,
-    fecfin DATETIME,
+    fecini TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecobj DATE,
+    fecfin DATE,
     PRIMARY KEY (ticket_id),
 	FOREIGN KEY (propietario) REFERENCES agentes(agente_id),
 	FOREIGN KEY (agente_id) REFERENCES agentes(agente_id),
@@ -85,3 +94,4 @@ CREATE TABLE notas (
     FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id),
     FOREIGN KEY (propietario) REFERENCES agentes(agente_id)
 );
+
