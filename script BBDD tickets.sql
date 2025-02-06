@@ -12,12 +12,14 @@ CREATE TABLE empresas (
 CREATE TABLE prioridades (
     prioridad_id CHAR(2) NOT NULL,
     descripcion VARCHAR(20) NOT NULL,
+    relevancia INT NOT NULL,
     PRIMARY KEY (prioridad_id)
 );
 
 CREATE TABLE estados (
     estado_id CHAR(2) NOT NULL,
     descripcion VARCHAR(20) NOT NULL,
+    relevancia INT NOT NULL,
     PRIMARY KEY (estado_id)
 );
 
