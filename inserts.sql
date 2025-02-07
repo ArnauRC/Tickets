@@ -1,9 +1,9 @@
-INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('1', 'Incidencia');
-INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('2', 'Mejora');
-INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('3', 'Petición de nueva funcionalidad');
-INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('4', 'Duda sobre funcionamiento');
-INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('5', 'Pedido');
-INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('6', 'Otras tareas');
+INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('6', 'Incidencia');
+INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('5', 'Mejora');
+INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('4', 'Petición de nueva funcionalidad');
+INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('3', 'Duda sobre funcionamiento');
+INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('2', 'Pedido');
+INSERT INTO `tickets`.`tipos` (`tipo_id`, `nombre`) VALUES ('1', 'Otras tareas');
 
 INSERT INTO `tickets`.`prioridades` (`prioridad_id`, `descripcion`, `relevancia`) VALUES ('AL', 'Alta', 3);
 INSERT INTO `tickets`.`prioridades` (`prioridad_id`, `descripcion`, `relevancia`) VALUES ('BA', 'Baja', 1);
