@@ -16,9 +16,14 @@ INSERT INTO `tickets`.`estados` (`estado_id`, `descripcion`, `relevancia`) VALUE
 INSERT INTO `tickets`.`estados` (`estado_id`, `descripcion`, `relevancia`) VALUES ('RE', 'Resuelto', 2);
 
 INSERT INTO `tickets`.`empresas` (`nombre`, `cif`) VALUES ('Aúna', 'B21112311');
+INSERT INTO `tickets`.`grupos` (`grupo_id`, `nombre`) VALUES ('1', 'Ninguno');
 INSERT INTO `tickets`.`grupos` (`nombre`) VALUES ('Developer');
 INSERT INTO `tickets`.`usuarios` (`nombre`, `password`) VALUES ('Xavi', 'xavi');
-INSERT INTO `tickets`.`agentes` (`nombre`, `correo`, `grupo_id`, `usuario_id`) VALUES ( 'Xavi', 'xavi@develoopers.cat', 1, 1);
+INSERT INTO `tickets`.`usuarios` (`nombre`, `password`) VALUES ('Arnau', 'arnau');
+
+INSERT INTO `tickets`.`agentes` (`nombre`, `correo`, `grupo_id`, `usuario_id`) VALUES ( 'Xavi', 'xavi@develoopers.cat', 2, 1);
+INSERT INTO `tickets`.`agentes` (`nombre`, `correo`, `grupo_id`, `usuario_id`) VALUES ( 'Arnau', 'arnau@develoopers.cat', 2, 2);
+
 INSERT INTO `tickets`.`contactos` (`nombre`, `correo`, `telefono1`, `empresa_id`) VALUES ('juan', 'juan@gmail.com', '123123123', 1);
 
 INSERT INTO `tickets`.`tickets` (`descripcion`, `cuerpo`, `propietario`, `agente_id`, `contacto_id`, `estado_id`, `prioridad_id`, `tipo_id`, `fecobj`, `fecfin`) VALUES ('Asunto', 'Descripcion etc etc etc etc etc', 1, 1, 1, 'AB', 'UR', 1, '2025-03-04', '2025-03-05');
