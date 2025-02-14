@@ -18,11 +18,12 @@ INSERT INTO `tickets`.`estados` (`estado_id`, `descripcion`, `relevancia`) VALUE
 INSERT INTO `tickets`.`empresas` (`nombre`, `cif`) VALUES ('Aúna', 'B21112311');
 INSERT INTO `tickets`.`grupos` (`grupo_id`, `nombre`) VALUES ('1', 'Ninguno');
 INSERT INTO `tickets`.`grupos` (`nombre`) VALUES ('Developer');
-INSERT INTO `tickets`.`usuarios` (`nombre`, `password`) VALUES ('Xavi', 'xavi');
-INSERT INTO `tickets`.`usuarios` (`nombre`, `password`) VALUES ('Arnau', 'arnau');
+INSERT INTO `tickets`.`grupos` (`nombre`) VALUES ('Soporte');
+INSERT INTO `tickets`.`usuarios` (`nombre`,`correo`, `password`) VALUES ('Xavi','xavi@develoopers.cat' ,'xavi');
+INSERT INTO `tickets`.`usuarios` (`nombre`,`correo`, `password`) VALUES ('Arnau','arnau@develoopers.cat', 'arnau');
 
-INSERT INTO `tickets`.`agentes` (`nombre`, `correo`, `grupo_id`, `usuario_id`) VALUES ( 'Xavi', 'xavi@develoopers.cat', 2, 1);
-INSERT INTO `tickets`.`agentes` (`nombre`, `correo`, `grupo_id`, `usuario_id`) VALUES ( 'Arnau', 'arnau@develoopers.cat', 2, 2);
+INSERT INTO `tickets`.`agentes` (`nombre`, `grupo_id`, `usuario_id`) VALUES ( 'Xavi', 2, 1);
+INSERT INTO `tickets`.`agentes` (`nombre`, `grupo_id`, `usuario_id`) VALUES ( 'Arnau', 3, 2);
 
 INSERT INTO `tickets`.`contactos` (`nombre`, `correo`, `telefono1`, `empresa_id`) VALUES ('juan', 'juan@gmail.com', '123123123', 1);
 

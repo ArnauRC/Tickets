@@ -30,8 +30,9 @@ CREATE TABLE grupos (
 );
 
 CREATE TABLE usuarios (
-	usuario_id INT NOT NULL AUTO_INCREMENT,
+	usuario_id INT NOT NULL auto_increment,
 	nombre VARCHAR(30) NOT NULL,
+	correo VARCHAR(60) NOT NULL,
     password VARCHAR(30) NOT NULL,
     PRIMARY KEY (usuario_id)
 );
@@ -39,9 +40,8 @@ CREATE TABLE usuarios (
 CREATE TABLE agentes (
     agente_id INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(40) NOT NULL,
-    correo VARCHAR(60) NOT NULL,
     grupo_id INT NOT NULL,
-    usuario_id INT NOT NULL,
+    usuario_id INT,
     PRIMARY KEY (agente_id),
 	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id),
     	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
