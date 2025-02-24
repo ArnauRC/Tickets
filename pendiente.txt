@@ -1,0 +1,13 @@
+- login (canviar todas las variables y formticket <auth...> no funciona )
+
+- links de agentes deben llevar a agente o a usuario?
+
+- Pagina inicio
+
+- navbar (horizontal y desplegable, error: baja en infoticket)
+
+- filtros scrollable
+
+- adjunto de archivos a tickets
+
+- Configuracion
