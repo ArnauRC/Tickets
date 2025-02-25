@@ -1,12 +1,10 @@
-- login (canviar todas las variables y formticket <auth...> no funciona )
+- Pagina inicio (ancho paneles adaptativo)
 
-- links de agentes deben llevar a agente o a usuario?
+-encriptar contraseñas
 
-- Pagina inicio
+-login (forzar error con password)
 
-- navbar (horizontal y desplegable, error: baja en infoticket)
-
-- filtros scrollable
+- navbar (horizontal y desplegable)
 
 - adjunto de archivos a tickets
 
