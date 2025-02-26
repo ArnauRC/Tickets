@@ -2,6 +2,8 @@
 
 - error al actualizar un ticket sin darle al botón de actualizar (no debería cambiar nada y cambia el select del formulario de actualizar y el color en la lista de tickets)
 
+- botón borrar tickets (los dos botones) funcional
+
 - modal en borrar notas y borrar tickets
 
 -encriptar contraseñas
