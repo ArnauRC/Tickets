@@ -1,12 +1,10 @@
-- Pagina inicio
-
-- error (en pantalla pequeña no se adapta bien)
+-error (en pantalla pequeña no se adapta bien)
 
 - navbar (horizontal y desplegable, si no es asi, crear view de forms)
 
 - limitar acceso vistas dependiendo del rol (admin, user…)
 
-- login (forzar error con password)
+- login(a veces no funciona)
 
 - adjunto de archivos a tickets
 
