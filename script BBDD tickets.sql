@@ -33,7 +33,7 @@ CREATE TABLE usuarios (
 	usuario_id INT NOT NULL auto_increment,
 	nombre VARCHAR(30) NOT NULL,
 	correo VARCHAR(60) NOT NULL,
-    password VARCHAR(30) NOT NULL,
+    password VARCHAR(128) NOT NULL,
     PRIMARY KEY (usuario_id)
 );
 
