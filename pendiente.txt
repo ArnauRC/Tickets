@@ -1,5 +1,9 @@
 -error (en pantalla pequeña no se adapta bien)
 
+- modal en listas (botones modal (btn1, btn2) )
+
+- botones modal (btn1, btn2) 
+
 - navbar (horizontal y desplegable, si no es asi, crear view de forms)
 
 - limitar acceso vistas dependiendo del rol (admin, user…)
