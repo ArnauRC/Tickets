@@ -1,6 +1,6 @@
 - Pagina inicio
 
--error (en pantalla pequeña no se adapta bien)
+- error (en pantalla pequeña no se adapta bien)
 
 - navbar (horizontal y desplegable, si no es asi, crear view de forms)
 
