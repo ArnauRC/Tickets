@@ -6,7 +6,7 @@
 
 - limitar acceso vistas dependiendo del rol (admin, user…)
 
--login (forzar error con password)
+- login (forzar error con password)
 
 - adjunto de archivos a tickets
 
