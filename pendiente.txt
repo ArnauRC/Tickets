@@ -1,12 +1,12 @@
 - Pagina inicio
 
-- error al actualizar un ticket sin darle al botón de actualizar (no debería cambiar nada y cambia el select del formulario de actualizar y el color en la lista de tickets)
+-error (en pantalla pequeña no se adapta bien)
+
+- navbar (horizontal y desplegable, si no es asi, crear view de forms)
 
 - limitar acceso vistas dependiendo del rol (admin, user…)
 
 -login (forzar error con password)
-
-- navbar (horizontal y desplegable)
 
 - adjunto de archivos a tickets
 
