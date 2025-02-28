@@ -1,10 +1,10 @@
-- Petición de nueva funcionalidad + LA FECHA OBJETIVO TERMINA HOY + botón eliminar ticket no se adapta en pantalla pequeña
-
 - contenedores propiedad-container y filtro-container adaptativos
 
 - error con actualizar contactos
 
 - limitar acceso vistas dependiendo del rol (admin, user…)
+
+- mas estadísticas en panel de información (graficos, etc)
 
 - login(a veces no funciona)
 
