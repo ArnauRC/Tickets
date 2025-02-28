@@ -1,12 +1,6 @@
-- contenedores propiedad-container y filtro-container adaptativos
-
-- error con actualizar contactos
-
-- limitar acceso vistas dependiendo del rol (admin, user…)
-
 - mas estadísticas en panel de información (graficos, etc)
 
-- login(a veces no funciona)
+- problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
 
 - adjunto de archivos a tickets
 
