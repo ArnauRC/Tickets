@@ -1,6 +1,4 @@
--error (en pantalla pequeña no se adapta bien)
-
-- modal en listas (botones modal (btn1, btn2) )
+-error (en pantalla pequeña no se adapta bien, barra de navegación)
 
 - navbar (horizontal y desplegable, si no es asi, crear view de forms)
 
