@@ -1,4 +1,4 @@
--error (en pantalla pequeña no se adapta bien, barra de navegación)
+- error con actualizar contactos
 
 - navbar (horizontal y desplegable, si no es asi, crear view de forms)
 
