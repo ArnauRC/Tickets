@@ -1,6 +1,8 @@
-- error con actualizar contactos
+- Petición de nueva funcionalidad + LA FECHA OBJETIVO TERMINA HOY + botón eliminar ticket no se adapta en pantalla pequeña
 
-- navbar (horizontal y desplegable, si no es asi, crear view de forms)
+- contenedores propiedad-container y filtro-container adaptativos
+
+- error con actualizar contactos
 
 - limitar acceso vistas dependiendo del rol (admin, user…)
 
