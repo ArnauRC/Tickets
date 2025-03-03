@@ -1,7 +1,5 @@
 - mas estadísticas en panel de información (graficos, etc)
 
-- cuando la fecha objetivo haya pasado  mostrar algún aviso
-
 - cuando se crea un ticket que se le asigne un cliente, si no hay ninguno que sea el por defecto (develoopers)
 
 -  que se pueda ordenar y filtrar los tickets por empresa 
