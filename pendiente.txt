@@ -4,10 +4,14 @@
 
 - problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
 
+- limitar acceso dependiendo del rol
+
+- teléfono usuarios
+
 - enviar correos de tickets
 
 - adjunto de archivos a tickets
 
-- Configuracion
+- Configuración (perfil)
 
 - actualizar documentacion 
