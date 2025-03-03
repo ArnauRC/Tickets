@@ -1,6 +1,10 @@
 - mas estadísticas en panel de información (graficos, etc)
 
+- cuando la fecha objetivo haya pasado cerrar el ticket o mostrar algún aviso
+
 - problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
+
+- enviar correos de tickets
 
 - adjunto de archivos a tickets
 
