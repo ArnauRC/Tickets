@@ -1,6 +1,21 @@
 - mas estadísticas en panel de información (graficos, etc)
 
-- cuando la fecha objetivo haya pasado cerrar el ticket o mostrar algún aviso
+- cuando la fecha objetivo haya pasado  mostrar algún aviso
+
+- consultas determinadas  ( guardar filtros tickets)
+
+- cuando se crea un ticket que se le asigne un cliente, si no hay ninguno que sea el por defecto (develoopers)
+
+- tener un botón de editar en el ticket que se pueda editar el texto, que se abra un modal par modificar titulo y cuerpo
+
+-  que se pueda ordenar y filtrar los tickets por empresa 
+
+- en el apartado de empresas tener un botón que lleve a contactos que filtre por esa empresa, que envíe el ID de la empresa
+
+- cuando se crea un ticket, los desplegables de prioridad, tipo y estado que tengan por defecto (abierto, incidencia, baja), añadir el campo empresa también y los contactos
+  aparecerán los que pertenezcan solo a esa empresa seleccionada
+
+- ¡IMPORTANTE! poner un desplegable más en el apartado de tickets que vaya concatenando todo lo que se va filtrando, al lado del botón filtrar que tenga un botón guardar
 
 - problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
 
@@ -15,3 +30,10 @@
 - Configuración (perfil)
 
 - actualizar documentacion 
+
+// FASE 2 //
+- en la descripción de cuando se crea un ticket, que se puedan adjuntar imágenes como hace el freshdesk, presentar como un HTML más que como un campo de texto
+
+- cuando se va a crear una empresa / grupo comprobar en la base de datos si existe ese nombre para que no se duplique
+
+- intentar acceder a la base de datos del servidor en vez de a la base de datos local como hace ahora
