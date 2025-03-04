@@ -72,6 +72,7 @@ CREATE TABLE tickets (
     agente_id INT,
     grupo_id INT,
     contacto_id INT,
+    empresa_id INT NOT NULL,
 	estado_id CHAR(2) NOT NULL,
     prioridad_id CHAR(2) NOT NULL,
     tipo_id INT NOT NULL,
@@ -82,6 +83,7 @@ CREATE TABLE tickets (
 	FOREIGN KEY (propietario) REFERENCES agentes(agente_id),
 	FOREIGN KEY (agente_id) REFERENCES agentes(agente_id),
 	FOREIGN KEY (contacto_id) REFERENCES contactos(contacto_id),
+	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id),
 	FOREIGN KEY (estado_id) REFERENCES estados(estado_id),
 	FOREIGN KEY (prioridad_id) REFERENCES prioridades(prioridad_id),
 	FOREIGN KEY (tipo_id) REFERENCES tipos(tipo_id)
@@ -98,3 +100,24 @@ CREATE TABLE notas (
     FOREIGN KEY (propietario) REFERENCES agentes(agente_id)
 );
 
+CREATE TABLE consultas (
+	consulta_id INT NOT NULL AUTO_INCREMENT,
+    usuario_id INT NOT NULL,
+    descripcion VARCHAR(30) NOT NULL,
+    fecObjDespuesDe DATE,
+    fecObjAntesDe DATE,
+    empresa_id INT NOT NULL,
+    tipo_id INT NOT NULL,
+    estado_id CHAR(2) NOT NULL,
+    prioridad_id CHAR(2) NOT NULL,
+    grupo_id INT NOT NULL,
+    agente_id INT NOT NULL,
+	PRIMARY KEY (consulta_id),
+	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
+    FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id),
+    FOREIGN KEY (tipo_id) REFERENCES tipos(tipo_id),
+    FOREIGN KEY (estado_id) REFERENCES estados(estado_id),
+    FOREIGN KEY (prioridad_id) REFERENCES prioridades(prioridad_id),
+	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id),
+    FOREIGN KEY (agente_id) REFERENCES agentes(agente_id)
+);
