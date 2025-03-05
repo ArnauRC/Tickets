@@ -1,6 +1,6 @@
 - mas estadísticas en panel de información (graficos, etc)
 
-- consultas determinadas:  (onAfterRender con usuario_id, modal de descripción, GuardarFiltros, y select de filtros con borrar, aplicar filtros onchange)
+- consultas determinadas:  borrar y editar
 
 - tener un botón de editar en el ticket que se pueda editar el texto, que se abra un modal par modificar titulo y cuerpo
 
