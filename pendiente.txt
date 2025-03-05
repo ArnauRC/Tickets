@@ -6,6 +6,8 @@
 
 - en el apartado de empresas tener un botón que lleve a contactos que filtre por esa empresa, que envíe el ID de la empresa
 
+- problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario de del ticket o la nota a agente, cuando debería vincularse a usuario)
+
 - problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
 
 - limitar acceso dependiendo del rol
