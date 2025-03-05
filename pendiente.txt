@@ -1,10 +1,6 @@
 - mas estadísticas en panel de información (graficos, etc)
 
-- consultas determinadas:  borrar y editar
-
-- tener un botón de editar en el ticket que se pueda editar el texto, que se abra un modal par modificar titulo y cuerpo
-
-- en el apartado de empresas tener un botón que lleve a contactos que filtre por esa empresa, que envíe el ID de la empresa
+- consultas determinadas:  borrar y editar (duda: debería guardar filtros de fecha? Esto significa que las consultas tendrían caducidad)
 
 - problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario de del ticket o la nota a agente, cuando debería vincularse a usuario)
 
