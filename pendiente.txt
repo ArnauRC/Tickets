@@ -1,8 +1,8 @@
 - mas estadísticas en panel de información (graficos, etc)
 
-- consultas determinadas:  borrar y editar (duda: debería guardar filtros de fecha? Esto significa que las consultas tendrían caducidad)
+- consultas determinadas:  borrar y editar 
 
-- problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario de del ticket o la nota a agente, cuando debería vincularse a usuario)
+- problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario del ticket o la nota a agente, cuando debería vincularse a usuario)
 
 - problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
 
@@ -12,7 +12,7 @@
 
 - enviar correos de tickets
 
-- adjunto de archivos a tickets
+- adjunto de archivos a tickets (TinyMCE para formulario tipo doc. y adjunto de archivos)
 
 - Configuración (perfil)
 
