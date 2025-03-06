@@ -33,6 +33,7 @@ CREATE TABLE usuarios (
 	usuario_id INT NOT NULL auto_increment,
 	nombre VARCHAR(30) NOT NULL,
 	correo VARCHAR(60) NOT NULL,
+    telefono CHAR(12) NOT NULL,
     password VARCHAR(128) NOT NULL,
     PRIMARY KEY (usuario_id)
 );
@@ -121,3 +122,12 @@ CREATE TABLE consultas (
 	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id),
     FOREIGN KEY (agente_id) REFERENCES agentes(agente_id)
 );
+
+CREATE TABLE adjuntos (
+	adjunto_id INT NOT NULL AUTO_INCREMENT,
+    ticket_id INT NOT NULL,
+    archivo BLOB NOT NULL,
+    PRIMARY KEY (adjunto_id),
+    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id)
+);
+
