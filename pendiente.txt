@@ -18,8 +18,6 @@
 	- Configuración (perfil)
 		(Ya aparecen los datos del usuario, falta que sean modificables)
 
-	- Cuando se registra un nuevo usuario, da error porque dice que el campo telefono no puede ser null, realmente si que puede ser null en la base de datos, hay que controlar en el codigo
-
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
 
