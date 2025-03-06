@@ -1,26 +1,47 @@
-- mas estadísticas en panel de información (graficos, etc)
+// IMPORTANTE //
 
-- consultas determinadas:  borrar y editar 
+	- consultas determinadas:  borrar y editar 
 
-- problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario del ticket o la nota a agente, cuando debería vincularse a usuario)
+	- enviar correos de tickets
 
-- problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
+	- adjunto de archivos a tickets (
+	
+			- al enviar ticket guardar los archivos en bbdd
+	
+			- Boton eliminar archivo el formticket
+	
+			- Cargar archivos en cada infoticket
 
-- limitar acceso dependiendo del rol
+			- Poder descargar los archivos de cada ticket
+		)
 
-- teléfono usuarios
+	- Configuración (perfil)
 
-- enviar correos de tickets
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
-- adjunto de archivos a tickets (TinyMCE para formulario tipo doc. y adjunto de archivos)
 
-- Configuración (perfil)
+// SECUNDARIO //
 
-- actualizar documentacion 
+	- mas estadísticas en panel de información (graficos, etc)
+
+	- problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario del ticket o la nota a agente, cuando debería vincularse a usuario)
+
+	- problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
+
+	- limitar acceso dependiendo del rol
+
+	- actualizar documentacion 
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+
 
 // FASE 2 //
-- en la descripción de cuando se crea un ticket, que se puedan adjuntar imágenes como hace el freshdesk, presentar como un HTML más que como un campo de texto
 
-- cuando se va a crear una empresa / grupo comprobar en la base de datos si existe ese nombre para que no se duplique
+	- en la descripción de cuando se crea un ticket, que se puedan adjuntar imágenes como hace el freshdesk, presentar como un HTML más que como un campo de texto
 
-- intentar acceder a la base de datos del servidor en vez de a la base de datos local como hace ahora
+	- cuando se va a crear una empresa / grupo comprobar en la base de datos si existe ese nombre para que no se duplique
+
+	- intentar acceder a la base de datos del servidor en vez de a la base de datos local como hace ahora
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
