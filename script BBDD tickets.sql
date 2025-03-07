@@ -45,7 +45,7 @@ CREATE TABLE agentes (
     usuario_id INT,
     PRIMARY KEY (agente_id),
 	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id),
-    	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
+	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
 );
 
 CREATE TABLE contactos (
@@ -56,7 +56,7 @@ CREATE TABLE contactos (
     telefono2 CHAR(12),
     empresa_id INT NOT NULL,
     PRIMARY KEY (contacto_id),
-	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id)
+	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id) ON DELETE CASCADE
 );
 
 CREATE TABLE tipos (
@@ -81,10 +81,10 @@ CREATE TABLE tickets (
     fecobj DATE,
     fecfin DATE,
     PRIMARY KEY (ticket_id),
-	FOREIGN KEY (propietario) REFERENCES usuarios(usuario_id),
+	FOREIGN KEY (propietario) REFERENCES usuarios(usuario_id) ON DELETE CASCADE,
 	FOREIGN KEY (agente_id) REFERENCES agentes(agente_id),
 	FOREIGN KEY (contacto_id) REFERENCES contactos(contacto_id),
-	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id),
+	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id) ON DELETE CASCADE,
 	FOREIGN KEY (estado_id) REFERENCES estados(estado_id),
 	FOREIGN KEY (prioridad_id) REFERENCES prioridades(prioridad_id),
 	FOREIGN KEY (tipo_id) REFERENCES tipos(tipo_id)
@@ -97,7 +97,7 @@ CREATE TABLE notas (
     propietario INT NOT NULL,
     fecini DATETIME NOT NULL,
     PRIMARY KEY (nota_id),
-    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id),
+    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id) ON DELETE CASCADE,
     FOREIGN KEY (propietario) REFERENCES usuarios(usuario_id)
 );
 
@@ -129,6 +129,6 @@ CREATE TABLE adjuntos (
     nombre VARCHAR(30) NOT NULL,
     archivo BLOB NOT NULL,
     PRIMARY KEY (adjunto_id),
-    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id)
+    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id) ON DELETE CASCADE
 );
 
