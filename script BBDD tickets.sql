@@ -81,7 +81,7 @@ CREATE TABLE tickets (
     fecobj DATE,
     fecfin DATE,
     PRIMARY KEY (ticket_id),
-	FOREIGN KEY (propietario) REFERENCES agentes(agente_id),
+	FOREIGN KEY (propietario) REFERENCES usuarios(usuario_id),
 	FOREIGN KEY (agente_id) REFERENCES agentes(agente_id),
 	FOREIGN KEY (contacto_id) REFERENCES contactos(contacto_id),
 	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id),
@@ -98,7 +98,7 @@ CREATE TABLE notas (
     fecini DATETIME NOT NULL,
     PRIMARY KEY (nota_id),
     FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id),
-    FOREIGN KEY (propietario) REFERENCES agentes(agente_id)
+    FOREIGN KEY (propietario) REFERENCES usuarios(usuario_id)
 );
 
 CREATE TABLE consultas (
@@ -126,6 +126,7 @@ CREATE TABLE consultas (
 CREATE TABLE adjuntos (
 	adjunto_id INT NOT NULL AUTO_INCREMENT,
     ticket_id INT NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
     archivo BLOB NOT NULL,
     PRIMARY KEY (adjunto_id),
     FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id)

@@ -5,18 +5,13 @@
 	- enviar correos de tickets
 
 	- adjunto de archivos a tickets (
-	
-			- al enviar ticket guardar los archivos en bbdd
-	
-			- Boton eliminar archivo el formticket
-	
+			
 			- Cargar archivos en cada infoticket
 
 			- Poder descargar los archivos de cada ticket
 		)
 
 	- Configuración (perfil)
-		(Ya aparecen los datos del usuario, falta que sean modificables)
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
@@ -24,8 +19,6 @@
 // SECUNDARIO //
 
 	- mas estadísticas en panel de información (graficos, etc)
-
-	- problema al editar o añadir cuando usuario no es agente (el problema probablemente sea que se vincula el propietario del ticket o la nota a agente, cuando debería vincularse a usuario)
 
 	- problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
 
