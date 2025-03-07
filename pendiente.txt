@@ -6,8 +6,6 @@
 
 	- adjunto de archivos a tickets (
 			
-			- Cargar archivos en cada infoticket
-
 			- Poder descargar los archivos de cada ticket
 		)
 
@@ -20,7 +18,7 @@
 
 	- mas estadísticas en panel de información (graficos, etc)
 
-	- problemas con java interop (hay que hacer esperar a que acabe cada petición, si no la aplicación peta)
+	- problemas con java interop (hay que controlar la excepción y hacer que la pagina cargue de nuevo)
 
 	- limitar acceso dependiendo del rol
 
