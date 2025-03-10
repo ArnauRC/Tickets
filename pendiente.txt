@@ -4,7 +4,7 @@
 
 	- enviar correos de tickets (
 		
-		- boton en el perfil de si quieres recibir correos o no (se guarda en tabla de usuarios)	
+		- boton en el perfil de si quieres recibir correos o no (se guarda en usuarios.recibe_correos)	
 
 		- falta autenticación para que se pueda enviar (EmailSenderService.SendEmailAsync, probablemente el problema sea Gmail...)
 		
