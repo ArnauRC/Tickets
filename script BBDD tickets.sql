@@ -35,6 +35,7 @@ CREATE TABLE usuarios (
 	correo VARCHAR(60) NOT NULL,
     telefono CHAR(12) NOT NULL,
     password VARCHAR(128) NOT NULL,
+    recibe_correos BOOL NOT NULL DEFAULT TRUE,
     PRIMARY KEY (usuario_id)
 );
 
