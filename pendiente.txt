@@ -2,12 +2,15 @@
 
 	- consultas determinadas:  borrar y editar 
 
-	- enviar correos de tickets
+	- enviar correos de tickets (
+		
+		- boton en el perfil de si quieres recibir correos o no (se guarda en tabla de usuarios)	
 
-	- adjunto de archivos a tickets (
-			
-			- Poder descargar los archivos de cada ticket
-		)
+		- falta autenticación para que se pueda enviar (EmailSenderService.SendEmailAsync)
+		
+	)
+
+	- enviar correo notas?
 
 	- Configuración (perfil)
 
