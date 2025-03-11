@@ -1,6 +1,6 @@
 // IMPORTANTE //
 
-	- consultas determinadas:  borrar y editar 
+	- estilo botones misconsultas y mistickets(sin ser agente)
 
 	- enviar correos de tickets (
 		
