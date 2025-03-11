@@ -1,0 +1,55 @@
+// GMAIL //
+
+2. SMTP con Autenticación de Google (Gmail)
+¿Es completamente gratuito usar Gmail como servidor SMTP?
+Sí, el uso de Gmail como servidor SMTP es gratuito, pero con ciertas limitaciones:
+
+Envíos limitados:
+500 correos por día para cuentas personales de Gmail.
+2,000 correos por día para cuentas de G Suite (Google Workspace).
+Si superas estos límites, tu cuenta puede ser bloqueada temporalmente por Google, y no podrás enviar correos hasta que se desbloquee. Es importante tener en cuenta estos límites si tu aplicación envía muchos correos a diario.
+Condiciones para usar Gmail SMTP:
+SMTP Server: smtp.gmail.com
+Puerto: 587 (con TLS) o 465 (con SSL).
+Autenticación: Usar tu dirección de correo electrónico y contraseña de Gmail.
+Autenticación de dos factores: Si tienes activada la autenticación de dos factores (2FA), necesitarás generar una contraseña de aplicación desde la configuración de Google, ya que no podrás usar tu contraseña estándar.
+Importante sobre OAuth2:
+Si estás usando Gmail y Google decide hacer obligatoria la autenticación con OAuth2 (por sus políticas de seguridad), deberás implementar OAuth2, lo cual puede ser más complicado. Sin embargo, si no quieres lidiar con OAuth2, usar una contraseña de aplicación es una opción si tienes 2FA activada.
+
+Conclusión: SMTP con Gmail es gratuito, pero con límites de 500 correos/día (para cuentas personales) y 2,000 correos/día (para cuentas G Suite). Si envías más correos o superas los límites, tu cuenta podría ser bloqueada temporalmente.
+
+// OFFICE 365 //
+
+Las suscripciones de pago de Microsoft 365 incluyen el acceso a las funcionalidades de correo electrónico de Exchange Online, que es la infraestructura que ofrece SMTP en Office 365. Sin embargo, si ya tienes una suscripción activa de Microsoft 365, no necesitas pagar extra específicamente para SMTP, ya que forma parte del servicio.
+
+¿Qué limitaciones tiene el uso de SMTP en Office 365?
+Si tienes una cuenta de Microsoft 365, las principales limitaciones de SMTP son las siguientes:
+
+Límites de envío de correos electrónicos:
+
+Límite de destinatarios por mensaje: Puedes enviar correos electrónicos a un máximo de 500 destinatarios por mensaje, y hasta 10,000 destinatarios al día.
+Límite de correos electrónicos enviados por día: El límite de envío de correos electrónicos diarios es generalmente de 10,000 mensajes por usuario. Esto es mucho más alto que en una cuenta gratuita de Outlook.com.
+Tamaño del mensaje:
+
+El tamaño máximo del correo electrónico, incluyendo los archivos adjuntos, es de 35 MB.
+Bloqueo temporal por abuso:
+
+Si envías un volumen de correos electrónicos sospechosos o en masa, tu cuenta puede ser temporalmente bloqueada por razones de seguridad, como medida anti-spam.
+Limitaciones de puertos y seguridad:
+
+Puerto 587 (con TLS) o Puerto 25 para el servidor SMTP.
+Debes utilizar Autenticación SMTP para conectar a los servidores de Office 365, y el uso de TLS (Transport Layer Security) es obligatorio para asegurar la comunicación.
+¿Es necesario registrar la aplicación en Azure?
+Si estás configurando un cliente de correo o una aplicación para enviar correos electrónicos a través del servidor SMTP de Office 365, no es necesario registrar la aplicación en Azure si solo estás usando un cliente de correo de forma básica, como Outlook o una aplicación de correo como Thunderbird.
+
+Sin embargo, si deseas utilizar API de Office 365 o autenticación moderna (OAuth) en lugar de la autenticación básica (usuario y contraseña), entonces sí, necesitarías registrar tu aplicación en Azure Active Directory (Azure AD). Esto se hace para habilitar la autenticación más segura y cumplir con las políticas de seguridad de Microsoft. En estos casos, el proceso se realiza a través del Azure Portal, y se requiere que configures permisos para el acceso adecuado a los servicios de correo electrónico.
+
+Pasos para configurar SMTP de Office 365:
+Servidor SMTP: smtp.office365.com
+Puerto: 587 (con TLS habilitado)
+Autenticación: Requiere autenticación con tu dirección de correo y contraseña de Microsoft 365.
+TLS (Transport Layer Security): Obligatorio para una conexión segura.
+Resumen:
+No es gratuito: Necesitas una suscripción activa a Microsoft 365 para usar SMTP de Office 365.
+Limitaciones: Tienes límites en el número de correos electrónicos enviados al día (10,000), el número de destinatarios por mensaje (500), y el tamaño del mensaje (35 MB).
+Azure AD: No necesitas registrar una aplicación en Azure si solo estás usando SMTP con autenticación básica. Solo si utilizas autenticación moderna (OAuth) o APIs de Office 365, necesitarás registrar tu aplicación en Azure.
