@@ -2,13 +2,13 @@
 
 	- enviar correos de tickets (
 		
-		- falta autenticación para que se pueda enviar (EmailSenderService.SendEmailAsync, probablemente el problema sea Gmail, que necesita de OAuth2, de la misma manera lo hace Outlook. )
+		- falta autenticación para que se pueda enviar (EmailSenderService.SendEmailAsync, probablemente el problema sea Gmail, que necesita de OAuth2. Solución: Usar office365 o implementar aouth2 para gmail )
 		
 	)
 
 	- enviar correo notas?
 
-	- Configuración (perfil)
+	- Configuración (perfil, editar)
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
@@ -19,7 +19,13 @@
 
 	- problemas con java interop (hay que controlar la excepción y hacer que la pagina cargue de nuevo)
 
-	- limitar acceso dependiendo del rol
+	- limitar acceso dependiendo del rol: (
+		
+		- Nuevo agente, grupo, empresa
+
+		- Editar y eliminar ticket(si no es suyo), grupo, empresa, agente
+		
+	)
 
 	- actualizar documentacion 
 
