@@ -17,7 +17,7 @@
 
 	- mas estadísticas en panel de información (graficos, etc)
 
-	- problemas con java interop (hay que controlar la excepción y hacer que la pagina cargue de nuevo)
+	- problemas con java interop (hacer que solo rediriga cuando ha acabado de procesar toda la pagina, si hay algo procesando no puede redirigir)
 
 	- limitar acceso dependiendo del rol: (
 		
