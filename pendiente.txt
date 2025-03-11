@@ -4,7 +4,7 @@
 
 	- enviar correos de tickets (
 		
-		- falta autenticación para que se pueda enviar (EmailSenderService.SendEmailAsync, probablemente el problema sea Gmail, que necesita de OAuth2, de la misma manera lo hace Outlook. O implementamos OAuth2 o buscamos un servicio como sendgrid)
+		- falta autenticación para que se pueda enviar (EmailSenderService.SendEmailAsync, probablemente el problema sea Gmail, que necesita de OAuth2, de la misma manera lo hace Outlook. )
 		
 	)
 
