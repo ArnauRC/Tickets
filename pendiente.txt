@@ -25,7 +25,7 @@
 		
 	)
 
-	- si es dueño del ticket o agente botón de añadir adjuntos en infoticket
+	- Al adjuntar archivos verificar que no haya caracteres especiales(_...)
 
 	- actualizar documentacion 
 
