@@ -10,8 +10,6 @@
 
 	- NOS cargamos tabla agentes (
 
-		- Actualizar base de datos(foreign keys, drop table agentes...)
-
 		- Actualizar modelos y controladores
 
 		- Ir pagina por pagina a solucionar errores y actualizar verificacion de agente
