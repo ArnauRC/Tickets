@@ -6,7 +6,23 @@
 		
 	)
 
-	- enviar correo notas?
+	- enviar correo notas
+
+	- NOS cargamos tabla agentes (
+
+		- Actualizar base de datos(foreign keys, drop table agentes...)
+
+		- Actualizar modelos y controladores
+
+		- Ir pagina por pagina a solucionar errores y actualizar verificacion de agente
+		
+		- Eliminar pagina nuevo agente
+
+		- Los agentes tienen lista de usuarios donde pueden editar el rol
+
+		- Añadir asignacion de grupo en perfil(si es rol agente)
+		
+	)
 
 	- Configuración (perfil, editar)
 
