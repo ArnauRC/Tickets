@@ -17,8 +17,6 @@
 
 	- mas estadísticas en panel de información (graficos, etc)
 
-	- problemas con java interop (exception controlada, solo falta volver a cargar la pagina si sucede...)
-
 	- limitar acceso dependiendo del rol: (
 		
 		- Nuevo agente, grupo, empresa
