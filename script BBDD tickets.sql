@@ -41,8 +41,8 @@ CREATE TABLE usuarios (
 	correo VARCHAR(60) NOT NULL,
     telefono CHAR(12) NOT NULL,
     password VARCHAR(128) NOT NULL,
-    rol_id INT NOT NULL,
-    grupo_id INT,
+    rol_id INT NOT NULL DEFAULT 1,
+    grupo_id INT NOT NULL DEFAULT 1,
     recibe_correos BOOL NOT NULL DEFAULT TRUE,
     PRIMARY KEY (usuario_id),
     FOREIGN KEY (rol_id) REFERENCES roles(rol_id),
@@ -71,7 +71,7 @@ CREATE TABLE tickets (
     descripcion VARCHAR(40) NOT NULL,
     cuerpo TEXT NOT NULL,
     propietario INT,
-    agente INT,
+    agente_id INT,
     grupo_id INT,
     contacto_id INT,
     empresa_id INT NOT NULL,
@@ -83,7 +83,7 @@ CREATE TABLE tickets (
     fecfin DATE,
     PRIMARY KEY (ticket_id),
 	FOREIGN KEY (propietario) REFERENCES usuarios(usuario_id) ON DELETE CASCADE,
-	FOREIGN KEY (agente) REFERENCES usuarios(usuario_id),
+	FOREIGN KEY (agente_id) REFERENCES usuarios(usuario_id),
 	FOREIGN KEY (contacto_id) REFERENCES contactos(contacto_id),
 	FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id) ON DELETE CASCADE,
 	FOREIGN KEY (estado_id) REFERENCES estados(estado_id),
@@ -113,7 +113,7 @@ CREATE TABLE consultas (
     estado_id CHAR(2),
     prioridad_id CHAR(2),
     grupo_id INT,
-    agente INT,
+    agente_id INT,
 	PRIMARY KEY (consulta_id),
 	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
     FOREIGN KEY (empresa_id) REFERENCES empresas(empresa_id),
@@ -121,7 +121,7 @@ CREATE TABLE consultas (
     FOREIGN KEY (estado_id) REFERENCES estados(estado_id),
     FOREIGN KEY (prioridad_id) REFERENCES prioridades(prioridad_id),
 	FOREIGN KEY (grupo_id) REFERENCES grupos(grupo_id),
-    FOREIGN KEY (agente) REFERENCES usuarios(usuario_id)
+    FOREIGN KEY (agente_id) REFERENCES usuarios(usuario_id)
 );
 
 CREATE TABLE adjuntos (
@@ -153,5 +153,9 @@ INSERT INTO `tickets`.`estados` (`estado_id`, `descripcion`, `relevancia`) VALUE
 INSERT INTO `tickets`.`estados` (`estado_id`, `descripcion`, `relevancia`) VALUES ('PE', 'Pendiente', 3);
 INSERT INTO `tickets`.`estados` (`estado_id`, `descripcion`, `relevancia`) VALUES ('RE', 'Resuelto', 2);
 
-INSERT INTO `tickets`.`roles` (`rol_id`, `descripcion`) VALUES ('1', 'usuario');
-INSERT INTO `tickets`.`roles` (`rol_id`, `descripcion`) VALUES ('2', 'agente');
+INSERT INTO `tickets`.`roles` (`rol_id`, `descripcion`) VALUES ('1', 'Usuario');
+INSERT INTO `tickets`.`roles` (`rol_id`, `descripcion`) VALUES ('2', 'Agente');
+
+INSERT INTO `tickets`.`grupos` (`grupo_id`, `nombre`) VALUES ('1', 'Ninguno');
+INSERT INTO `tickets`.`empresas` (`nombre`, `cif`) VALUES ('Develoopers', 'B66799297');
+
