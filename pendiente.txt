@@ -7,14 +7,8 @@
 	)
 
 	- enviar correo notas
-
-	- NOS cargamos tabla agentes (
-
-		- Ir pagina por pagina a solucionar errores y actualizar verificacion de agente
 		
-		- Añadir asignacion de grupo en perfil(si es rol agente)
-		
-	)
+	- Añadir asignacion de grupo en perfil(si es rol agente)
 
 	- Configuración (perfil, editar)
 
