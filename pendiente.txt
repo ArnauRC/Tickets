@@ -21,7 +21,7 @@
 
 	- limitar acceso dependiendo del rol: (
 
-		- Editar y eliminar ticket(si no es suyo), grupo, empresa, agente
+		- Editar y eliminar ticket(si no es suyo)
 		
 	)
 
