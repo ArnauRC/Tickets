@@ -17,12 +17,6 @@
 
 	- mas estadísticas en panel de información (graficos, etc)
 
-	- limitar acceso dependiendo del rol: (
-
-		- Editar y eliminar ticket(si no es suyo)
-		
-	)
-
 	- actualizar documentacion 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
