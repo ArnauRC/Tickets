@@ -13,7 +13,7 @@
 
 // SECUNDARIO //
 
-	- mas estadísticas en panel de información (porcentaje de tickets cerrados, etc)
+	- mas estadísticas en panel de información
 
 	- actualizar documentacion 
 		
