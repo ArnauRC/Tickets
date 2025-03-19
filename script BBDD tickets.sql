@@ -128,7 +128,7 @@ CREATE TABLE adjuntos (
 	adjunto_id INT NOT NULL AUTO_INCREMENT,
     ticket_id INT NOT NULL,
     nombre VARCHAR(30) NOT NULL,
-    archivo BLOB NOT NULL,
+    archivo LONGBLOB NOT NULL,
     PRIMARY KEY (adjunto_id),
     FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id) ON DELETE CASCADE
 );
