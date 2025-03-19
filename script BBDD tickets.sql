@@ -94,7 +94,7 @@ CREATE TABLE tickets (
 CREATE TABLE notas (
 	nota_id INT NOT NULL AUTO_INCREMENT,
     ticket_id INT NOT NULL,
-    cuerpo VARCHAR(500) NOT NULL,
+    cuerpo VARCHAR(1000) NOT NULL,
     propietario INT NOT NULL,
     fecini DATETIME NOT NULL,
     PRIMARY KEY (nota_id),
