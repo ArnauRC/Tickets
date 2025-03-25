@@ -1,0 +1,13 @@
+- Apartado Inicio: ArnauP
+
+- Apartado Tickets: Empieza ArnauP (explicando un poco el apartado general), ArnauC explica los filtros, ArnauP crea un ticket (explicando todo lo que se puede hacer en la creación), ArnauC explica la información del ticket.
+
+- Apartado usuarios: ArnauP
+- Apartado Grupos : ArnauP
+
+- Apartado Contactos: ArnauC
+
+- Apartado Empresas: ArnauP
+- Apartado Nuevos formularios: ArnauP
+
+- Apartado Mi perfil: ArnauC
