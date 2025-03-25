@@ -70,7 +70,7 @@ CREATE TABLE tipos (
 
 CREATE TABLE tickets (
     ticket_id INT NOT NULL AUTO_INCREMENT,
-    descripcion VARCHAR(70) NOT NULL,
+    descripcion VARCHAR(100) NOT NULL,
     cuerpo TEXT NOT NULL,
     propietario INT,
     agente_id INT,
