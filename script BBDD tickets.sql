@@ -1,11 +1,13 @@
+/*
 DROP DATABASE IF EXISTS tickets;
+*/
 CREATE DATABASE tickets;
 USE tickets;
 
 CREATE TABLE empresas (
     empresa_id INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
-    cif VARCHAR(20) NOT NULL,
+    cif VARCHAR(20),
     PRIMARY KEY (empresa_id)
 );
 
@@ -39,7 +41,7 @@ CREATE TABLE usuarios (
 	usuario_id INT NOT NULL auto_increment,
 	nombre VARCHAR(30) NOT NULL,
 	correo VARCHAR(60) NOT NULL,
-    telefono CHAR(12) NOT NULL,
+    telefono CHAR(12),
     password VARCHAR(128) NOT NULL,
     rol_id INT NOT NULL DEFAULT 1,
     grupo_id INT NOT NULL DEFAULT 1,
@@ -53,7 +55,7 @@ CREATE TABLE contactos (
     contacto_id INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(20) NOT NULL,
     correo VARCHAR(60) NOT NULL,
-    telefono1 CHAR(12) NOT NULL,
+    telefono1 CHAR(12),
     telefono2 CHAR(12),
     empresa_id INT NOT NULL,
     PRIMARY KEY (contacto_id),
@@ -68,7 +70,7 @@ CREATE TABLE tipos (
 
 CREATE TABLE tickets (
     ticket_id INT NOT NULL AUTO_INCREMENT,
-    descripcion VARCHAR(40) NOT NULL,
+    descripcion VARCHAR(70) NOT NULL,
     cuerpo TEXT NOT NULL,
     propietario INT,
     agente_id INT,
