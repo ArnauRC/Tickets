@@ -13,8 +13,6 @@
 
 // SECUNDARIO //
 
-	- Arreglar titulos mistickets
-
 	- actualizar documentacion 
 		
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
@@ -24,7 +22,5 @@
 // FASE 2 //
 
 	- en la descripción de cuando se crea un ticket, que se puedan adjuntar imágenes como hace el freshdesk, presentar como un HTML más que como un campo de texto
-
-	- intentar acceder a la base de datos del servidor en vez de a la base de datos local como hace ahora
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
