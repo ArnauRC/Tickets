@@ -11,8 +11,6 @@
 
 // RODRIGUEZ -------------------------------------------------------------------------------------------------------------
 
-- que en el buscador también se pueda filtrar alguna partícula que haya en la descripción de algún ticket
-
 - poner capturas de pantalla en la desc
 
 - en la creación del ticket tener un selector que sea "categoria" por ejemplo si se selecciona tipo incidencia, después que aparezcan los subtipos que hay en incidencia
