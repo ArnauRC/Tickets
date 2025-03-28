@@ -1,0 +1,17 @@
+que en el buscador también se pueda filtrar alguna partícula que haya en la descripción de algún ticket
+si se crea un ticket pero no se selecciona agente, que mande un correo a los usuarios que esten en el grupo selccionado
+poner el selector de grupo como obligatorio cuando se crea un ticket (eliminar el campo ninguno del selector)
+
+poner capturas de pantalla en la desc
+
+en la creación del ticket tener un selector que sea "categoria" por ejemplo si se selecciona tipo incidencia, después que aparezcan los subtipos que hay en incidencia
+
+crear un apartado de configuración, donde se pueda cambiar la fecha por defecto de la fecha objetivo (en la base de datos, en la tabla de tipo de incidencia añadir un campo que sea cuantos días se suman a la fecha  objetivo)
+
+que cuando se crea una nota , mirar si el usuario asignado es distinto al que ha creado la nota , le llegue un correo
+
+cuando se cierra un ticket que también envie un mail
+
+tener un botón de crear contacto al lado del desplegable de contacto cuando se va a crear un ticket, teniendo en cuenta también la empresa (comprobando que no exista)
+
+cuando se abre un ticket desde el correo con el "ver ticket" se buguea la sesión y no-va nada
