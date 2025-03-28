@@ -13,7 +13,7 @@
 
 - poner capturas de pantalla en la desc
 
-- en la creación del ticket tener un selector que sea "categoria" por ejemplo si se selecciona tipo incidencia, después que aparezcan los subtipos que hay en incidencia
+- en la creación del ticket tener un selector que sea "area" por ejemplo si se selecciona tipo incidencia, después que aparezcan los subtipos que hay en incidencia
 
 - En formticket, dependiendo de la prioridad sumar dias a la fecha objetivo
 
