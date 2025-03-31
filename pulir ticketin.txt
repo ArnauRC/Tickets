@@ -16,8 +16,6 @@
 - en la creación del ticket tener un selector que sea "area" por ejemplo si se selecciona tipo incidencia, después que aparezcan los subtipos que hay en incidencia. 
   Las areas deben tener un maestro para crearlas y eliminarlas.
 
-- En formticket, dependiendo de la prioridad sumar dias a la fecha objetivo
-
 - tener un botón de crear contacto al lado del desplegable de contacto cuando se va a crear un ticket, teniendo en cuenta también la empresa (comprobando que no exista)
 
 //------------------------------------------------------------------------------------------------------------------------
