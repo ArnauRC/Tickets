@@ -13,8 +13,6 @@
 
 - poner capturas de pantalla en la desc
 
-- Buscador en el select de contactos de formticket
-
 //------------------------------------------------------------------------------------------------------------------------
 
 // PRIORITARIO //
