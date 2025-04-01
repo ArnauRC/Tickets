@@ -1,8 +1,5 @@
 // POBLADOR --------------------------------------------------------------------------------------------------------------
 
-- si se crea un ticket pero no se selecciona agente, que mande un correo a los usuarios que esten en el grupo selccionado
-  poner el selector de grupo como obligatorio cuando se crea un ticket (eliminar el campo ninguno del selector)
-
 - cuando varíe el estado de un ticket que también envie un mail
 
 //------------------------------------------------------------------------------------------------------------------------
