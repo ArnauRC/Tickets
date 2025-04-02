@@ -1,2 +1,31 @@
 // CAMBIOS TICKET IN //
 
+  // FORMULARIO DE TICKET //
+
+      - Grupo ya no puede ser null.
+
+      - Buscador en el campo de contactos.
+
+      - Botón para crear un contacto.
+
+      - Dependiendo de la prioridad se añaden dias a la fecha objetivo (Urgente: 7 dias, Alta: 14 dias, Media: 1 mes, Baja: 3 meses). Si se modifica la fecha objetivo manualmente automaticamente deja de sumar dias.
+
+      - Se pueden adjuntar imagenes copiándolas y pegándolas en la descripción.
+
+      - Nuevo campo obligatorio de área.
+
+  // LISTA DE TICKETS // 
+
+      - El buscador filtra por asunto y descripción, ignorando tildes, signos de puntuacion, saltos de línea y múltiples espacios en blanco.
+
+  // ENVIO DE CORREOS ELECTRÓNICOS //
+
+      - Se envia correo cuando:
+
+          - Se crea un ticket (Lo recibe el agente. En caso de que no haya agente asignado, se enviará un correo a todos aquellos que pertenezcan al grupoa asignado).
+
+          - Se envia una nota (Si lo envia el propietario del ticket, lo recibe el agente, y viceversa. Si la nota ha sido enviada por alguien diferente al propietario o al agente, estos dos recibirán el correo notificándoles la creación de una nueva nota).
+
+          - Se cambia el agente de un ticket (Se enviará una notificación al nuevo agente).
+
+          - Se cambia el estado de un ticket (Se enviará un correo al propietario del ticket notificándole quién a cambiado el estado, a qué estado se ha cambiado, y qué ticket ha sido modificado).
