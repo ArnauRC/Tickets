@@ -1,0 +1,1 @@
+- Al borrar un ticket se tienen que borrar todas las capturas adjuntas ( wwwwroot/uploads ). 
