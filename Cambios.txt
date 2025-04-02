@@ -18,6 +18,8 @@
 
       - El buscador filtra por asunto y descripción, ignorando tildes, signos de puntuacion, saltos de línea y múltiples espacios en blanco.
 
+      - Cada ticket muestra el área al que pertenece.
+
   // ENVIO DE CORREOS ELECTRÓNICOS //
 
       - Se envia correo cuando:
