@@ -31,3 +31,12 @@
           - Se cambia el agente de un ticket (Se enviará una notificación al nuevo agente).
 
           - Se cambia el estado de un ticket (Se enviará un correo al propietario del ticket notificándole quién a cambiado el estado, a qué estado se ha cambiado, y qué ticket ha sido modificado).
+// ÁREA //
+
+      - Nuevo formulario de creación de área.
+
+      - Nueva lista de áreas.
+
+      - Cada ticket partenece a un área obligatoriamente (editable).
+
+      - Filtro por área.
