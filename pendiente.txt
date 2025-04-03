@@ -1,5 +1,3 @@
 - Al borrar un ticket se tienen que borrar todas las capturas adjuntas ( wwwwroot/uploads ). 
 
-- Cuando se crea un ticket, hacer que las cajas de descripción y asunto ocupen todo el ancho y alto posible de la pantalla, al hacer que ocupe todo, las dos columnas donde están los selectores podríamos reducirla a una columna
-
 - Mirar a ver si en las notas también podemos poner capturas de pantalla igual que en la descripcion
