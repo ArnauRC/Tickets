@@ -1,9 +1,5 @@
 - Al borrar un ticket se tienen que borrar todas las capturas adjuntas ( wwwwroot/uploads ). 
 
-- Cuando se crea un ticket y el agente es el mismo al propietario, le llega mail
-
-- Cuando se crea un ticket y no tiene asignado agente, al enviar el mail a las personas del grupo, habría que recorrer todas las personas que esten en el grupo y ponerle al link de "Ver ticket" su id de agente correspondiente
-
 - El modal de editar ticket, hacerlo más grande, si puede ser que ocupe todo el ancho de pantalla o un 80%, ya que lo más importante es la caja de descripción, que se vean bien las imágenes y todo el texto que pueda haber.
 
 - Cuando se crea un ticket, hacer que las cajas de descripción y asunto ocupen todo el ancho y alto posible de la pantalla, al hacer que ocupe todo, las dos columnas donde están los selectores podríamos reducirla a una columna
