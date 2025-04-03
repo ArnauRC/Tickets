@@ -1,7 +1,5 @@
 - Al borrar un ticket se tienen que borrar todas las capturas adjuntas ( wwwwroot/uploads ). 
 
-- El modal de editar ticket, hacerlo más grande, si puede ser que ocupe todo el ancho de pantalla o un 80%, ya que lo más importante es la caja de descripción, que se vean bien las imágenes y todo el texto que pueda haber.
-
 - Cuando se crea un ticket, hacer que las cajas de descripción y asunto ocupen todo el ancho y alto posible de la pantalla, al hacer que ocupe todo, las dos columnas donde están los selectores podríamos reducirla a una columna
 
 - Mirar a ver si en las notas también podemos poner capturas de pantalla igual que en la descripcion
