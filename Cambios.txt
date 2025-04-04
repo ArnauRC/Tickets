@@ -2,6 +2,8 @@
 
   // FORMULARIO DE TICKET //
 
+      - Caja de descripción ampliada.
+
       - Grupo ya no puede ser null.
 
       - Buscador en el campo de contactos.
