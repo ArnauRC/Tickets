@@ -1,1 +1,17 @@
-- Mirar a ver si en las notas también podemos poner capturas de pantalla igual que en la descripcion
+- Claim de filtros: ( formato: consulta_id - ordenacion - asc/desc - fecObjDespuesDe - FecObjAntesDe - empresa_id - tipo_id - area_id - estadoAb - estadoPe - estadoRe - estadoCe - prioridad_id - grupo_ id - agente_id -)
+  Claim default: 0-1-1-(fecobjmasantigua)-(fecobjmasnueva)-0-0-0-0-0-0-0-0-0-0- 
+
+- consulta: Si consulta es 0 se aplican los demas filtros, si es cualquier otro numero significa que se tienen que aplicar los filtros de esa consulta, por lo tanto todos los otros filtros que hay escritos en el claim se ignoran.
+
+- ordenación: nunca será 0. 
+    1 = fecha de creacion
+    2 = fecha objectivo 
+    3 = empresa
+    4 = prioridad
+    5 = estado
+    6 = tipo
+    7 = area
+
+  - asc/desc: 1 si es desc, 2 si es asc
+
+  - Si cualquier otro filtro es 0, significa que no se ha seleccionado nada, es decir que no se tendrá en cuenta al aplicar los filtros.
