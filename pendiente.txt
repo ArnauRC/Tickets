@@ -15,3 +15,5 @@
   - asc/desc: 1 si es desc, 2 si es asc
 
   - Si cualquier otro filtro es 0, significa que no se ha seleccionado nada, es decir que no se tendrá en cuenta al aplicar los filtros.
+
+- Estaría bien poder filtrar también por el “creador del ticket”
