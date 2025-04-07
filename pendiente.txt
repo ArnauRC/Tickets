@@ -1,5 +1,5 @@
 - Claim de filtros: ( formato-> consulta_id : ordenacion : asc/desc : fecObjDespuesDe : FecObjAntesDe : propietario : empresa_id : tipo_id : area_id : estadoAb : estadoPe : estadoRe : estadoCe : prioridad_id : grupo_ id : agente_id :)
-  Claim default: 0:1:1:0:0::0:0:0:0:0:0:0:0:0:0:0: 
+  Claim default: 0:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0: 
 
 - consulta: Si consulta es 0 se aplican los demas filtros, si es cualquier otro numero significa que se tienen que aplicar los filtros de esa consulta, por lo tanto todos los otros filtros que hay escritos en el claim se ignoran.
 
