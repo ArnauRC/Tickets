@@ -2,7 +2,5 @@
 
 - Añadir filtro sesion de busqueda
 
-- Ya sé que lo comentamos, pero es necesario poder abrir un área desde el mismo ticket (quizás con un modal) para no abandonarlo sin grabar por no disponer del área correcta. He tenido el caso de tener que salir para dar de alta el área y perder lo que tenía ya informado.
-
 - Poder adjuntar archivos arrastrando el archivo a la web.
 
