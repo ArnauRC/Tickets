@@ -1,2 +1,2 @@
 - Poder adjuntar archivos arrastrando el archivo a la web.
-
+- Buscar como reiniciar la app si hay algun error
