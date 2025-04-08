@@ -4,7 +4,5 @@
 
 - Ya sé que lo comentamos, pero es necesario poder abrir un área desde el mismo ticket (quizás con un modal) para no abandonarlo sin grabar por no disponer del área correcta. He tenido el caso de tener que salir para dar de alta el área y perder lo que tenía ya informado.
 
-- Cuando se edita un ticket y se acaba clicando al botón de “Actualizar” no sale ningún mensaje conforme se ha actualizado correctamente. Quizás lo suyo sería que al clicar “Actualizar” volviese automáticamente a la pantalla de inicio o tickets.
-
 - Poder adjuntar archivos arrastrando el archivo a la web.
 
