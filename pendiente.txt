@@ -1,6 +1,2 @@
-- Que salgan seleccionados los filtros. 
-
-- Añadir filtro sesion de busqueda
-
 - Poder adjuntar archivos arrastrando el archivo a la web.
 
